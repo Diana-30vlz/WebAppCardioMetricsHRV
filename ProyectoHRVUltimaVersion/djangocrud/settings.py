@@ -90,7 +90,7 @@ DATABASES = {
         'HOST': 'CardioMetricsHRV.mysql.pythonanywhere-services.com',  # Dirección del servidor MySQL (localhost)
         'PORT': '3306',  # Puerto de MySQL (predeterminado 3306)
         'OPTIONS': {
-            'sql_mode': 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,ONLY_FULL_GROUP_BY',
+            'sql_mode': 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,ONLY_FULL_GROUP_BY', # <-- ¡NO_AUTO_CREATE_USER ha sido eliminado!
         },
     }
 }
