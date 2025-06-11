@@ -84,11 +84,14 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Motor de base de datos MySQL
-        'NAME': 'proyectovfc_hrv_vf',  # Nombre de la base de datos creada
-        'USER': 'root',  # Usuario de MySQL
+        'NAME': 'CardioMetricsHRV$proyectovfc_hrv_vf',  # Nombre de la base de datos creada
+        'USER': 'CardioMetricsHRV',  # Usuario de MySQL
         'PASSWORD': '',  # Contraseña de MySQL (en blanco por defecto)
-        'HOST': '127.0.0.1',  # Dirección del servidor MySQL (localhost)
+        'HOST': 'CardioMetricsHRV.mysql.pythonanywhere-services.com',  # Dirección del servidor MySQL (localhost)
         'PORT': '3306',  # Puerto de MySQL (predeterminado 3306)
+        'OPTIONS': {
+            'sql_mode': 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,ONLY_FULL_GROUP_BY',
+        },
     }
 }
 
