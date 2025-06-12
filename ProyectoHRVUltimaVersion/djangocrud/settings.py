@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'djangocrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Motor de base de datos MySQL
-        'NAME': 'CardioMetricsHRV$BD_CARDIOM',  # Nombre de la base de datos creada
+        'NAME': 'CardioMetricsHRV$BD_cardiocardioHRV',  # Nombre de la base de datos creada
         'USER': 'CardioMetricsHRV',  # Usuario de MySQL
         'PASSWORD': 'gansito123',  # Contraseña de MySQL (en blanco por defecto)
         'HOST': 'CardioMetricsHRV.mysql.pythonanywhere-services.com',  # Dirección del servidor MySQL (localhost)
